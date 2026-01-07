@@ -403,8 +403,8 @@ def admin_panel():
         stats = get_dashboard_stats()
         st.subheader("📊 Overview")
        # st.image(r".\assets\gym_banner.jpg", 
-             caption="Gym Dashboard Overview 📊", 
-             use_container_width=True)
+             #caption="Gym Dashboard Overview 📊", 
+            # use_container_width=True)
         col1, col2, col3 = st.columns(3)
         col1.metric("Active Members", stats['active_members'], help="Total active gym members")
         col2.metric("Active Subscriptions", stats['active_subs'], help="Current active memberships")

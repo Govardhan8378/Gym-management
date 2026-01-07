@@ -402,7 +402,7 @@ def admin_panel():
     if menu == "Dashboard":
         stats = get_dashboard_stats()
         st.subheader("📊 Overview")
-        st.image(r".\assets\gym_banner.jpg", 
+       # st.image(r".\assets\gym_banner.jpg", 
              caption="Gym Dashboard Overview 📊", 
              use_container_width=True)
         col1, col2, col3 = st.columns(3)
@@ -437,7 +437,7 @@ def admin_panel():
     
     elif menu == "Members":
         st.subheader("👥 Member Management")
-        st.image(r".\assets\members.png",
+       # st.image(r".\assets\members.png",
              use_container_width=20)
         
         tab1, tab2, tab3, tab4 = st.tabs(["View Members", "Add Member", "Update Member", "Delete Member"])
